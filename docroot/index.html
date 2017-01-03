@@ -1,5 +1,153 @@
 <html>
+	<head>
+		<meta charset="utf-8">
+		<title>Spacibl&#333;</title>
+
+		<meta name="description" content="Open source tools hosting for WebVR spaces.">
+		<meta name="author" content="Trevor F. Smith">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+		<link rel="icon" href="favicon.png" type="image/x-icon"> 
+		<link rel="stylesheet" href="base.css" type='text/css'>
+
+		<style>
+			#hero {
+				text-align: center;
+			}
+			#hero-logo-wrapper {
+				display: inline-block;
+				padding: 20px 10px;
+				border: solid 2px black;
+				border-radius: 20px;
+				margin: 60px 0;
+			}
+			#hero-logo {
+				max-width: 90%;
+				width: 128px;
+			}
+			#hero h1 {
+				display: inline-block;
+				max-width: 80%;
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 40px;
+				line-height: 1.3em;
+				font-weight: 300;
+			}
+			#get-started-link {
+				margin-top: 60px;
+				display: inline-block;
+				text-align: center;
+				padding: 20px;
+				font-size: 25px;
+				color: green;
+				border: solid 2px green;
+				border-radius: 20px;
+			}
+			#get-started-link:hover {
+				text-decoration: none;
+				background-color: #EFEFEF;
+			}
+			#triple-threat {
+				margin: 90px 0 20px 0;
+			}
+			#triple-threat .col-4 {
+				text-align: center;
+			}
+			#triple-threat img, #triple-threat video {
+				display: inline-block;
+				height: 200px;
+				max-width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			#triple-thread video {
+				border: solid 1px white;
+				border-radius: 20px;
+			}
+
+			#triple-threat h2 {
+				margin: 20px 0;
+				font-size: 25px;
+				font-weight: 400;
+			}
+
+			#triple-threat .col-4 p {
+				font-size: 20px;
+				line-height: 1.2em;
+				font-weight: 300;
+			}
+		</style>
+	</head>
 	<body>
-		<h1>The Spacibl&#333; site will live here...</h1> 
+		<div id="body-wrapper">
+			<nav id="top-nav">
+				<a id="home-link" href="/">Spacibl&#333;</a>
+				<ul>
+					<li>
+						<a href="https://github.com/Spaciblo">
+							<img alt="Spacibl&#333; on GitHub" src="github-logo-white.png">
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/spaciblo">
+							<img alt="@Spaciblo on Twitter" src="twitter-logo-white.png">
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="hero">
+				<div id="hero-logo-wrapper">
+					<img id="hero-logo" alt="Spacibl&#333;" src="logo.png">
+				</div>
+				<br>
+				<h1>
+					Spacibl&#333; provides hosting tools for social VR on the web.
+				</h1>
+				<br>
+				<a id="get-started-link" href="https://github.com/Spaciblo/spaciblo/blob/master/README.md">Get Started</a>
+			</div>
+
+			<div id="triple-threat" class="row">
+				<div class="col-4">
+					<img src="VR-Logos.png">
+					<h2>BYO HMD</h2>
+					<p>
+						Works with any virtual reality headset that works with WebVR.
+					</p>
+				</div>
+				<div class="col-4">
+					<video src="vid1.m4v" autoplay="true" loop="true"></video>
+					<h2>No Code Needed</h2>
+					<p>
+						Install the Spacibl&#333; server and dive into VR without any programming.
+					</p>
+				</div>
+				<div class="col-4">
+					<img src="Open-Source.png">
+					<h2>Free and Open</h2>
+					<p>
+						Every aspect of the Spacibl&#333; tools are free to use and available at GitHub.
+					</p>
+				</div>
+			</div>
+
+			<div id="footer">
+				<ul>
+					<li>
+						<a href="https://github.com/Spaciblo">
+							<img alt="Spacibl&#333; on GitHub" src="github-logo-white.png">
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/spaciblo">
+							<img alt="@Spaciblo on Twitter" src="twitter-logo-white.png">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</body>
 </html>
