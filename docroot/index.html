@@ -68,6 +68,10 @@
 			#triple-threat-copy .col-4 a {
 				color: green;
 			}
+			.small-hidden { display: none; }
+			@media(min-width: 768px){
+				.small-hidden { display: inherit; }
+			}
 
 			.video-container {
 				position: relative;
@@ -111,7 +115,7 @@
 			</div>
 
 			<div id="triple-threat" class="row">
-				<div class="col-4">
+				<div class="col-4 small-hidden">
 					<img src="VR-Logos.png">
 				</div>
 				<div class="col-4">
@@ -119,7 +123,7 @@
 						<iframe src="https://www.youtube.com/embed/videoseries?list=PLMKl5FHlOLH9biT-zERk0gAcBYL5zXLHq" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-4 small-hidden">
 					<img src="Open-Source.png">
 				</div>
 			</div>
