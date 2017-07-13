@@ -15,19 +15,9 @@
 			#hero {
 				text-align: center;
 			}
-			#hero-logo-wrapper {
-				display: inline-block;
-				padding: 20px 10px;
-				border: solid 2px black;
-				border-radius: 20px;
-				margin: 60px 0;
-			}
-			#hero-logo {
-				max-width: 90%;
-				width: 128px;
-			}
 			#hero h1 {
-				display: inline-block;
+				padding: 50px 10px 0px 10px;
+				display: block;
 				max-width: 80%;
 				margin-left: auto;
 				margin-right: auto;
@@ -36,7 +26,7 @@
 				font-weight: 300;
 			}
 			#get-started-link {
-				margin-top: 60px;
+				margin-top: 20px;
 				display: inline-block;
 				text-align: center;
 				padding: 20px;
@@ -50,33 +40,48 @@
 				background-color: #EFEFEF;
 			}
 			#triple-threat {
-				margin: 90px 0 20px 0;
+				margin: 60px 0 0 0;
 			}
-			#triple-threat .col-4 {
+			#triple-threat .col-4, #triple-threat-copy {
 				text-align: center;
 			}
-			#triple-threat img, #triple-threat video {
+			#triple-threat img {
 				display: inline-block;
 				height: 200px;
 				max-width: 90%;
 				margin-left: auto;
 				margin-right: auto;
 			}
-			#triple-thread video {
-				border: solid 1px white;
-				border-radius: 20px;
+			#triple-threat-copy {
+				margin-bottom: 20px;
 			}
-
-			#triple-threat h2 {
+			#triple-threat-copy h2 {
 				margin: 20px 0;
 				font-size: 25px;
 				font-weight: 400;
 			}
-
-			#triple-threat .col-4 p {
+			#triple-threat-copy .col-4 p, #triple-threat-copy .col-4 a {
 				font-size: 20px;
 				line-height: 1.2em;
 				font-weight: 300;
+			}
+			#triple-threat-copy .col-4 a {
+				color: green;
+			}
+
+			.video-container {
+				position: relative;
+				padding-bottom: 46%;
+				padding-top: 30px;
+				height: 0;
+				overflow: hidden;
+			}
+			.video-container iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
 			}
 		</style>
 	</head>
@@ -99,37 +104,42 @@
 			</nav>
 
 			<div id="hero">
-				<div id="hero-logo-wrapper">
-					<img id="hero-logo" alt="Spacibl&#333;" src="logo.png">
-				</div>
-				<br>
 				<h1>
-					Spacibl&#333; provides hosting tools for social VR on the web.
+					Hosting tools for social VR on the web.
 				</h1>
-				<br>
 				<a id="get-started-link" href="https://github.com/Spaciblo/spaciblo/wiki">Get Started</a>
 			</div>
 
 			<div id="triple-threat" class="row">
 				<div class="col-4">
 					<img src="VR-Logos.png">
+				</div>
+				<div class="col-4">
+					<div class="video-container">
+						<iframe src="https://www.youtube.com/embed/videoseries?list=PLMKl5FHlOLH9biT-zERk0gAcBYL5zXLHq" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-4">
+					<img src="Open-Source.png">
+				</div>
+			</div>
+			<div id="triple-threat-copy" class="row">
+				<div class="col-4">
 					<h2>BYO HMD</h2>
 					<p>
 						Works with any virtual reality headset that works with WebVR.
 					</p>
 				</div>
 				<div class="col-4">
-					<video src="vid1.m4v" autoplay="true" loop="true"></video>
-					<h2>No Code Needed</h2>
+					<h2>Dive Right In</h2>
 					<p>
-						Install the Spacibl&#333; server and dive into VR without any programming.
+						Install the Spacibl&#333; server and step into VR without any programming.
 					</p>
 				</div>
 				<div class="col-4">
-					<img src="Open-Source.png">
 					<h2>Free and Open</h2>
 					<p>
-						Every aspect of the Spacibl&#333; tools are free to use and available at GitHub.
+						Every aspect of the Spacibl&#333; tools are free to use and available <a href="https://github.com/Spaciblo/spaciblo/wiki">on GitHub</a>.
 					</p>
 				</div>
 			</div>
